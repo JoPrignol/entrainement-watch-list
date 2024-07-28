@@ -1,0 +1,8 @@
+<% @movies.each do |movie| %>
+  <ul>
+    <li><%= movie.title %></li>
+    <li><%= movie.overview %></li>
+    <li><%= movie.rating %></li>
+    <img src="<%= movie.poster_url %>" alt="affiche de <%= movie.title %>">
+  </ul>
+<% end %>

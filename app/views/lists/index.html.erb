@@ -1,0 +1,12 @@
+
+<div class="container w-25 m-5 d-flex flex-column justify-content-center" style="border: 3px solid #000000;">
+<h1>My lists !</h1>
+  <div class="container">
+    <% @lists.each do |list| %>
+      <ul style="list-style:none;">
+        <li><%= link_to list.name, list_path(list) %></li>
+      </ul>
+    <% end %>
+  </div>
+  <%= link_to "Create a list!", new_list_path %>
+</div>
